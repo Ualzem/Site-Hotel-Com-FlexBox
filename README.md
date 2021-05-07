@@ -1,6 +1,6 @@
 # Site-Hotel-Com_FlexBox
 
-[![GitHub](https://img.shields.io/github/license/ualzem/Site-Hotel-Com_FlexBox)](https://github.com/Ualzem/Site-Hotem-Com-FlexBox/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/ualzem/Site-Hotel-Com_FlexBox)](https://github.com/Ualzem/Site-Hotel-Com-FlexBox/blob/master/LICENSE)
 
 # Sobre o Projeto
 
