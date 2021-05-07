@@ -1,0 +1,739 @@
+    html {
+        /*página rola suavemente*/
+        scroll-behavior: smooth;
+    }
+    
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li,
+    a {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Montserrat";
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* MENU */
+    
+    .menu-completo {
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background: #2c70ff;
+    }
+    
+    .menu {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    @media (max-width:615px) {
+        .menu {
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-completo {
+            position: absolute;
+            z-index: 0;
+        }
+    }
+    
+    .menu a {
+        color: white;
+    }
+    
+    .menu-logo a {
+        margin: 0 10px;
+    }
+    
+    .menu-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .menu-nav a {
+        font-size: 1.25em;
+        display: block;
+        padding: 10px;
+    }
+    
+    @media (max-width: 810px) {
+        .menu-nav a {
+            font-size: 0.90em;
+            padding: 10px;
+        }
+    }
+    
+    .menu-nav a:hover {
+        color: #122ab2;
+    }
+    
+    .vazio {
+        height: 140px;
+    }
+    
+    @media (min-width: 618px) {
+        .vazio {
+            height: 80px;
+        }
+    }
+    /* BANER DO SITE */
+    
+    #baner-completo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('imagesHotel/capa1.png');
+        background-position: center;
+        background-size: cover;
+        height: 670px;
+    }
+    
+    .baner_headline {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .baner_headline h1 {
+        max-width: 680px;
+        color: #FFF;
+        font-size: 3.75em;
+        text-shadow: 3px 3px 7px #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    @media (max-width: 342px) {
+        .baner_headline h1 {
+            font-size: 2.5em;
+        }
+        .vazio {
+            height: 180px;
+        }
+    }
+    
+    .baner_headline h2 {
+        max-width: 630px;
+        color: #FFF;
+        font-size: 1.31em;
+        font-weight: lighter;
+        text-shadow: 1px 1px 3px #000;
+        margin: 0;
+        padding: 0;
+        margin-top: 4px;
+    }
+    /* CHECKIN */
+    
+    #checkin {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .checkin {
+        display: flex;
+        width: 960px;
+        height: 110px;
+        justify-content: center;
+        background-color: #303166;
+        margin-top: -80px;
+        margin-bottom: 100px;
+    }
+    
+    .checkin_options1 {
+        /*tamanho fixo*/
+        flex: 1;
+        background-color: #303166;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 700px) {
+        .checkin {
+            background-color: #303166;
+            flex-direction: column;
+            margin-top: -90px;
+            margin-bottom: 100px;
+        }
+    }
+    
+    @media (max-width: 342px) {
+        .checkin {
+            background-color: #303166;
+            flex-direction: column;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+    }
+    
+    .checkin_options2 {
+        flex: 1;
+        /*tamanho fixo*/
+        display: flex;
+        background-color: #303166;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+    
+    .baner_options a {
+        display: inline-block;
+        /*acompanha o tamanho do texto*/
+        border: 2px solid #FFF;
+        padding: 5px;
+        font-size: 0.81em;
+        text-decoration: none;
+        color: #FFF;
+    }
+    
+    .mini-baner1,
+    .mini-baner2,
+    .mini-baner3,
+    .mini-baner4 {
+        flex: 1;
+        color: #FFF;
+        padding: 20px;
+    }
+    
+    input[type=number] {
+        width: 45px;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    input[type=submit] {
+        width: 75px;
+        height: 35px;
+        font-size: 1.15em;
+        margin: 27px;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: rgb(99, 94, 139);
+        color: #FFF;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #f77f08;
+    }
+    /* WELCOME */
+    
+    #welcome2 {
+        border-top: 2px solid rgb(99, 94, 139);
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .welcome-img {
+        flex: 1 1 400px;
+        margin: 0;
+    }
+    
+    .welcome-text1 {
+        flex: 2 1 300px;
+        /*so ele vai ocupar medade do espaço, e os outros 2 itens vão ocupar 25% do espaço cada
+    E QUANDO A ESCRITA DIMINUIR A 300PX AS IMAGENS VÃO QUEBRAR A LINHA E FICAR DEBAIXO DA ESCRITA*/
+        margin: 0 10px;
+        /*0px pra cima e pra baixo  e 10 pra 1 lado e pro outro*/
+    }
+    
+    .welcome-text1 h2 {
+        max-width: 580px;
+        color: rgb(68, 59, 59);
+        font-size: 0.93em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    
+    .welcome-text1 h1 {
+        max-width: 580px;
+        color: rgb(68, 59, 59);
+        font-size: 1.56em;
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+    
+    .welcome-text1 h3 {
+        max-width: 380px;
+        color: rgb(68, 59, 59);
+        font-size: 0.93em;
+        margin-bottom: 20px;
+        margin-left: 150px;
+    }
+    
+    .btn-saiba {
+        width: 90px;
+        height: 15px;
+        padding: 10px 10px 10px 10px;
+        margin-left: 220px;
+        margin-top: 30px;
+        color: #f8f6fa;
+        background-color: rgb(194, 153, 100);
+        text-decoration: none;
+        text-align: center;
+        border-radius: 30px;
+    }
+    
+    @media (max-width:360px) {
+        .btn-saiba {
+            margin-left: 80px;
+        }
+        .welcome-text1 h3 {
+            margin-left: 60px;
+        }
+    }
+    
+    @media (min-width:768px) and (max-width:942px) {
+        .welcome-text1 h3 {
+            margin-left: 50px;
+        }
+        .btn-saiba {
+            margin-left: 80px;
+        }
+    }
+    /* COMODIDADES*/
+    
+    #comodidades {
+        display: flex;
+        justify-content: center;
+        background-image: url('amenities.png');
+        background-position: center;
+        background-size: cover;
+        height: 456px;
+        margin-top: 30px;
+    }
+    
+    .comodidades-placa {
+        width: 440px;
+        height: 456px;
+        background-color: #1c7497;
+        margin-left: 530px;
+    }
+    
+    @media(max-width: 860px) {
+        .comodidades-placa {
+            margin-left: 0px;
+        }
+    }
+    
+    .comodidades-title {
+        color: #FFF;
+        text-align: center;
+    }
+    
+    .comodidades-title h1 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .comodidades-title p {
+        font-size: 0.875em;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .comodidades-text {
+        flex: 1;
+        color: #FFF;
+        padding: 20px;
+    }
+    
+    .comodidades-text-total {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    @media (max-width:360px) {
+        .comodidades-text-total {
+            padding: auto;
+        }
+    }
+    
+    @media (max-width:380px) {
+        .comodidades-title p {
+            font-size: 0.875em;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .comodidades-text-total-a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.81em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    
+    .comodidades-text-total-b {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.81em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    .comodidades1,
+    .comodidades2,
+    .comodidades3,
+    .comodidades4 {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    .material-icons {
+        margin-right: 2px;
+    }
+    
+    #rooms1 {
+        border-top: 2px solid rgb(99, 94, 139);
+        max-width: 960px;
+        margin: 60px auto;
+        padding: 60px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .rooms-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rooms-title {
+        color: rgb(68, 59, 59);
+    }
+    
+    .rooms-title p {
+        margin: auto 15px;
+        text-align: center;
+        font-size: 1.33em;
+    }
+    
+    .rooms-title h1 {
+        margin: auto;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    .rooms-button {
+        margin-top: 15px;
+    }
+    /* ROOMS 2 */
+    
+    .rooms2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 960px;
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    .block {
+        width: calc(100%/3 - 20px);
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .block-img {
+        height: calc(((100vw - (100vw - 960px))/3 - 10px)/2);
+    }
+    
+    .block-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .block-desc {
+        padding: 15px;
+        flex-grow: 1;
+    }
+    
+    @media (max-width: 630px) {
+        .block {
+            width: calc(100% - 20px);
+        }
+        .block-img {
+            height: calc((100vw - 20px) /2);
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .block {
+            width: calc(100%);
+            margin: 10px 0;
+        }
+        .block-img {
+            height: calc(100vw /2);
+        }
+    }
+    /* DEPOIMENTOS */
+    
+    #people-say {
+        display: flex;
+        justify-content: flex-start;
+        background-image: url('people.png');
+        background-position: center;
+        background-size: cover;
+        height: 456px;
+        margin-top: 70px;
+    }
+    
+    .people-placa {
+        width: 440px;
+        height: 456px;
+        background-color: #1c7497;
+        margin-left: 203px;
+    }
+    
+    @media(max-width: 860px) {
+        .people-placa {
+            margin-left: 0px;
+        }
+    }
+    
+    .people-title {
+        color: #FFF;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    
+    .people-title h1 {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+    
+    .people-title a {
+        max-width: 20px;
+        text-align: center;
+        font-size: 0.875em;
+    }
+    
+    .people-title h5 {
+        font-weight: lighter;
+    }
+    
+    .people-text {
+        flex: 1;
+        color: #FFF;
+        padding: 20px;
+    }
+    
+    .line-people {
+        background-color: rgb(182, 175, 175);
+        width: 160px;
+        height: 4px;
+        margin-left: 85px;
+        margin-bottom: 10px;
+        border-radius: 60px;
+    }
+    
+    .people-text-total {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .people-text-total-a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.81em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    
+    .people-text-total-b {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.81em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    .people1 {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    .people1 img {
+        border-radius: 50px;
+        margin-left: 30px;
+    }
+    
+    .people2 {
+        margin-top: 20px;
+    }
+    /* RESTAURANTE */
+    
+    #restaurant {
+        border-top: 2px solid rgb(99, 94, 139);
+        max-width: 960px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto;
+        padding: 60px 0;
+    }
+    
+    .restaurant-image {
+        flex: 1
+    }
+    
+    .restaurant-title {
+        text-align: center;
+    }
+    
+    .restaurant-text {
+        flex: 2;
+        color: rgb(68, 59, 59);
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+    
+    @media(max-width: 904px) {
+        .restaurant-text {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    
+    .restaurant-text h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .restaurant-text h3 {
+        font-size: 1.25em;
+        margin-bottom: 20px;
+    }
+    
+    .restaurant-kitchen ul {
+        list-style-type: none
+    }
+    
+    .restaurant-kitchen ol {
+        list-style-type: none;
+        margin-left: 40px;
+    }
+    /* FOOTER */
+    
+    footer {
+        background-color: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .footer-area {
+        max-width: 960px;
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    .footer-area-item {
+        flex: 1;
+        color: #FFF;
+    }
+    
+    footer .widget-title-text {
+        color: rgb(151, 148, 148);
+    }
+    
+    footer .widget-body {
+        font-size: 0.81em;
+        padding-right: 26px;
+    }
+    
+    .footer-direitos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #2c2c2c;
+        height: 40px;
+        line-height: 40px;
+        color: rgb(241, 240, 237);
+        margin-top: 55px;
+    }
+    
+    .footer-direitos-text {
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 960px) {
+        .footer-area {
+            margin: 15px;
+        }
+        .footer-area-item {
+            margin: 15px;
+        }
+        .footer-direitos {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+        }
+        .footer-direitos-text {
+            font-size: 0.8em;
+            flex-wrap: wrap;
+        }
+    }
+    
+    @media (max-width: 440px) {
+        .footer-area {
+            flex-direction: column;
+        }
+    }
